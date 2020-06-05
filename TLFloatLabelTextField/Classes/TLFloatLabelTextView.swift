@@ -27,7 +27,7 @@ import UIKit
         }
     }
     
-    @IBInspectable var hint:String = "" {
+    public var hint:String = "" {
         didSet {
             titleLabel.text = hint
             titleLabel.sizeToFit()
@@ -53,7 +53,7 @@ import UIKit
         }
     }
     
-    @IBInspectable var titleTextColour:UIColor = UIColor.gray {
+    public var titleTextColour:UIColor = UIColor.gray {
         didSet {
             if !isFirstResponder {
                 titleLabel.textColor = titleTextColour
@@ -62,7 +62,7 @@ import UIKit
         }
     }
     
-    @IBInspectable var titleActiveTextColour:UIColor = UIColor.cyan {
+   public var titleActiveTextColour:UIColor = UIColor.cyan {
         didSet {
             if isFirstResponder {
                 titleLabel.textColor = titleActiveTextColour
